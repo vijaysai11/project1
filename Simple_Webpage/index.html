@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Comatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>
+        WebCreative
+    </title>
+
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo"><a href="#"><img src='file:///C:/Users/Vamsi%20Nakka/Downloads/9b647e15d21f8ea620106d9971aec7e0.svg'/>Web Creative</a></div>
+      <ul class="links">
+        <li><a href="Home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    <a href="#" class="action_btn">Get Started</a>
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="Home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+
+    </div>
+</header>
+<div class="main_content">
+<div class="content">
+    <h1>Welcome to our portal</h1>
+    <p>Media queries are basically a way to write conditional CSS. That means CSS markup that the browser will only render if certain conditions are met. Its most commonly use is in responsive design, where it’s a way to tell browsers to change the display of website elements when above or below a certain screen size. However, as we will see below, there are other ways you can use them....</p>
+</div>
+</div>
+
+<script language="javascript" type="text/javascript">
+const toggleBtn=document.querySelector('.toggle_btn')
+
+const toggleBtnIcon=document.querySelector('.toggle_btn i')
+const dropDownMenu=document.querySelector('.dropdown_menu')
+
+toggleBtn.onclick=function(){
+    dropDownMenu.classList.toggle('open');
+    const isOpen=dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList=isOpen?'fa-solid fa-xmark' : 'fa-solid fa-bars'
+}
+
+</script>
+</body>
+
+</html>
